@@ -1,2 +1,2 @@
-# Programming Language Worldmap
-<https://jameschz.github.io/programming-language-worldmap.html>
+# Programming Language World Map
+<https://jameschz.github.io/programming-language-world-map.html>
