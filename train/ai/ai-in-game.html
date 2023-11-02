@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>AI Study</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/impress.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body>
+
+<div id="impress" class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser. Upcoming version 10 of Internet Explorer <i>should</i> also handle it.</p>
+    </div>
+
+    <div id="title" class="step title" data-x="0" data-y="0" data-scale="2">
+        <span class="try" style="font-size: 40px;top: -1.5em;">Talking about AI</span>
+        <h1 style="font-size: 90px;">AI in Game Industry<sup>*</sup></h1>
+        <span class="footnote"><sup>*</sup> by James.h</span>
+    </div>
+
+    <!-- 
+        https://playground.tensorflow.org/
+    -->
+    <div id="step1" class="step" data-x="-1000" data-y="-2000">
+        <q>How we apply <b>AI</b> in Game Industry?</q><br/>
+        <q style="font-size: 28px;"><a href="https://zhuanlan.zhihu.com/p/633713607" target="_blank">Art Materials</a></q><br/>
+        <q style="font-size: 28px;"><a href="https://zhuanlan.zhihu.com/p/633440786" target="_blank">Text Materials</a></q><br/>
+        <q style="font-size: 28px;"><a href="https://zhuanlan.zhihu.com/p/633440786" target="_blank">Music Materials</a></q><br/>
+        <q style="font-size: 28px;"><a href="https://zhuanlan.zhihu.com/p/633440786" target="_blank">Advertising Materials</a></q><br/>
+        <q style="font-size: 28px;"><a href="https://zhuanlan.zhihu.com/p/633440786" target="_blank">Customer Service</a></q><br/>
+        <q style="font-size: 28px;"><a href="https://zhuanlan.zhihu.com/p/633440786" target="_blank">Automated Testing</a></q><br/>
+        <q style="font-size: 28px;"><a href="https://zhuanlan.zhihu.com/p/633440786" target="_blank">Prevent Cheating</a></q><br/>
+    </div>
+
+    <div id="step2" class="step" data-x="0" data-y="3000" data-rotate="90" data-scale="3">
+        <q>More examples of applications.</q><br/>
+        <p><img src="res/application-in-game.png" style="margin-top: 30px;"/></p>
+        
+    </div>
+
+    <div id="step3" class="step" data-x="1000" data-y="-2000">
+        <q>AI is changing Game Industry ...</q><br/>
+        <q style="font-size: 28px;"><a href="https://zhuanlan.zhihu.com/p/621875669" target="_blank">Special Report</a></q><br/>
+    </div>
+
+    <div id="step4" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+        <p>Is there any <b class="rotating">legal risk</b> during the use of AI?</p>
+        <q><a href="https://zhuanlan.zhihu.com/p/646042414" target="_blank">Look here</a></q><br/>
+    </div>
+
+    <div id="to-be-continued" class="step" data-x="6000" data-y="2000" data-scale="2">
+        <p>QA : What will AI bring to the Game in the future?</p>
+    </div>
+
+    <div id="get-on-with-it" class="step" data-x="6500" data-y="2500" data-z="-100" data-rotate-x="-40" data-rotate-y="20" data-scale="2">
+        <p>Let's get on with it, <a href="index.html#/bored">Next</a> ...</p>
+        <span class="footnote">* enjoy it ;)</span>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script src="js/impress.js"></script>
+<script>impress();</script>
+
+</body>
+</html>

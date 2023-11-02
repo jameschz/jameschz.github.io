@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>AI Study</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/impress.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body>
+
+<div id="impress" class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser. Upcoming version 10 of Internet Explorer <i>should</i> also handle it.</p>
+    </div>
+
+    <div id="title" class="step title" data-x="0" data-y="0" data-scale="2">
+        <span class="try" style="font-size: 40px;top: -1.5em;">Talking about AI</span>
+        <h1 style="font-size: 90px;">How to learn AI?<sup>*</sup></h1>
+        <span class="footnote"><sup>*</sup> by James.h</span>
+    </div>
+
+    <!-- 
+        https://playground.tensorflow.org/
+    -->
+    <div id="step1" class="step" data-x="-1000" data-y="-2000" data-scale="0.5">
+        <p><img src="res/learning-roadmap.png" /></p>
+    </div>
+
+    <div id="step2" class="step" data-x="1000" data-y="3000" data-rotate="90" data-scale="3">
+        <q class="comm-title">Top-Level <strong>Tools</strong></q><br/>
+        <q class="comm-link"><a href="https://www.tensorflow.org/" target="_blank">TensorFlow</a> vs <a href="https://pytorch.org/" target="_blank">PyTorch</a></q><br/>
+        <q class="comm-link"><a href="https://www.assemblyai.com/blog/pytorch-vs-tensorflow-in-2023/" target="_blank">Trends in 2023</a></q><br/>
+    </div>
+
+    <div id="step3" class="step" data-x="1000" data-y="-2000">
+        <q>Learn about Python?</q><br/>
+        <q class="comm-link"><a href="https://www.python.org/" target="_blank">In Python.org</a></q><br/>
+        <q class="comm-link"><a href="https://jameschz.github.io/programming-language-world-map.html" target="_blank">Something Interesting</a></q><br/>
+    </div>
+
+    <div id="to-be-continued" class="step" data-x="6000" data-y="2000" data-scale="2">
+        <p>To be continued ...</p>
+    </div>
+
+    <div id="get-on-with-it" class="step" data-x="6500" data-y="2500" data-z="-100" data-rotate-x="-40" data-rotate-y="20" data-scale="2">
+        <p>Let's get on with it, <a href="index.html#/bored">Next</a> ...</p>
+        <span class="footnote">* enjoy it ;)</span>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script src="js/impress.js"></script>
+<script>impress();</script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>AI Study</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/impress.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body>
+
+<div id="impress" class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser. Upcoming version 10 of Internet Explorer <i>should</i> also handle it.</p>
+    </div>
+
+    <div id="title" class="step title" data-x="0" data-y="0" data-scale="2">
+        <span class="try" style="font-size: 40px;top: -1.5em;">Talking about AI</span>
+        <h1 style="font-size: 90px;">What's AI?<sup>*</sup></h1>
+        <span class="footnote"><sup>*</sup> by James.h</span>
+    </div>
+
+    <!-- 
+        https://playground.tensorflow.org/
+    -->
+    <div id="step1" class="step" data-x="-1000" data-y="-2000">
+        <q class="comm-title">What is <b>AI</b>?</q><br/>
+        <p class="comm-desc">Artificial Intelligence (AI) is a science devoted to making machines think and act like humans.</p>
+        <q class="comm-link"><a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank">Basic Knowledge</a></q><br/>
+        <q class="comm-link"><a href="https://en.wikipedia.org/wiki/History_of_artificial_intelligence" target="_blank">History of AI</a></q><br/>
+    </div>
+
+    <div id="step2" class="step" data-x="0" data-y="3000" data-rotate="90" data-scale="3">
+        <q class="comm-title">The 3 <strong>Stages of AI</strong></q><br/>
+        <p><img src="res/stage-of-ai.png" /></p>
+    </div>
+
+    <div id="step3" class="step" data-x="0" data-y="-2000">
+        <q class="comm-title">Today's <b>AI</b></q><br/>
+        <p class="comm-desc">The rapid development of AI technology today shocked all of us.</p>
+        <q class="comm-link"><a href="res/AI-Marketing-Report-2023-V3.pdf" target="_blank">Marketing Report 2023</a></q><br/>
+    </div>
+
+    <!--
+        PandaAI: https://zhuanlan.zhihu.com/p/630574809
+    -->
+    <div id="step4" class="step" data-x="3000" data-y="3000" data-rotate="180" data-scale="3">
+        <q>Types and Applications</q><br/>
+        <p class="comm-desc"><b>1.</b> Discriminant AI <span class="text-red"><=></span> Judgment</p>
+        <p class="comm-link">
+            <a href="https://zhuanlan.zhihu.com/p/644398150" target="_blank">Data Analysis</a>,
+            <a href="https://en.wikipedia.org/wiki/Business_intelligence" target="_blank">BI (Analysis/Prediction)</a>, 
+            <a href="https://en.wikipedia.org/wiki/Artificial_vision" target="_blank">Artificial Vision</a>,
+            <a href="https://en.wikipedia.org/wiki/Computer_vision" target="_blank">CV</a>,
+            <a href="https://en.wikipedia.org/wiki/NLP" target="_blank">NLP (BERT/GPT)</a>...
+
+        </p>
+        <p class="comm-desc"><b>2.</b> Generative AI <span class="text-red"><=></span> Creativity</p>
+        <p class="comm-link">
+            <a href="https://en.wikipedia.org/wiki/Generative_artificial_intelligence" target="_blank">Definition</a>,
+            <a href="https://zhuanlan.zhihu.com/p/607605399" target="_blank">BERT vs GPT</a><br/>
+            <a href="https://www.unite.ai/midjourney-vs-stable-diffusion-the-battle-of-ai-image-generators/" target="_blank">Midjourney vs SD</a>
+        </p>
+    </div>
+
+    <div id="step5" class="step" data-x="1000" data-y="-2000">
+        <q>Prepare for Next ...</q><br/>
+        <q class="comm-link"><a href="https://zhuanlan.zhihu.com/p/629216404" target="_blank">Learn Common Industry Terms</a></q><br/>
+        <q class="comm-link"><a href="https://flatironschool.com/blog/deep-learning-vs-machine-learning/" target="_blank">Machine Learning => Deep Learning</a></q><br/>
+    </div>
+
+    <div id="step6" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="4">
+        <q>More about <b>Deep Learning</b>?</q><br/>
+        <q><a href="https://en.wikipedia.org/wiki/Deep_learning" target="_blank">DL in Wikipedia</a></q><br/>
+        <q><a href="https://playground.tensorflow.org/" target="_blank">Neural Network</a></q><br/>
+    </div>
+
+    <div id="step7" class="step" data-x="7500" data-y="-300" data-scale="4">
+        <q>What is <b>Large Language Model</b>?</q><br>
+        <q><a href="https://en.wikipedia.org/wiki/Large_language_model" target="_blank">LLM in Wikipedia</a></q><br/>
+        <q><a href="https://zhuanlan.zhihu.com/p/651458484" target="_blank">More about it</a></q><br/>
+    </div>
+
+    <div id="step8" class="step" data-x="8500" data-y="300" data-rotate="270" data-scale="2">
+        <q>What is <b>NEXT</b>?</q><br>
+        <q><a href="https://m.huxiu.com/article/1935893.html" target="_blank">AI Agent</a></q><br/>
+        <q><a href="https://autogpt.net/auto-gpt-vs-chatgpt-how-do-they-differ-and-everything-you-need-to-know/" target="_blank">AutoGPT ...</a></q><br/>
+    </div>
+
+    <div id="to-be-continued" class="step" data-x="6000" data-y="2000" data-scale="2">
+        <p>QA : What is the future of AI?</p>
+    </div>
+
+    <div id="get-on-with-it" class="step" data-x="6500" data-y="2500" data-z="-100" data-rotate-x="-40" data-rotate-y="20" data-scale="2">
+        <p>Let's get on with it, <a href="index.html#/bored">Next</a> ...</p>
+        <span class="footnote">* enjoy it ;)</span>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script src="js/impress.js"></script>
+<script>impress();</script>
+
+</body>
+</html>
